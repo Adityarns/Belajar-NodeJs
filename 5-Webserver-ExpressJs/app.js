@@ -1,5 +1,5 @@
 const express = require('express')
-const expressLayouts = require('express-js-layouts')
+const expressLayouts = require('express-ejs-layouts')
 const app = express()
 const port = 3000
 
@@ -22,6 +22,7 @@ app.get( '/', (req, res) =>{
     },
     ]
     res.render('index' , {
+        layout: 'layouts/main-layouts',
         title: 'Halaman utama',
         nama: 'Adityarns_',
         mahasiswa 
@@ -30,11 +31,15 @@ app.get( '/', (req, res) =>{
 })
 
 app.get( '/about', (req, res) =>{
-    res.render('about', {title: 'Halaman About'})    
+    res.render('about', {
+        layout: 'layouts/main-layouts',
+        title: 'Halaman About'})    
 })
 
 app.get( '/contact', (req, res) =>{
-    res.render('contact', {title: 'Halaman Contact'})    
+    res.render('contact', {
+        layout: 'layouts/main-layouts',        
+        title: 'Halaman Contact'})    
 })
 
 app.use( '/', (req, res) =>{
