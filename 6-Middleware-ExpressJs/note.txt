@@ -1,0 +1,20 @@
+middleware itu kayak software yang dijalanin sebelum aplikasi mengeluarkan respon.
+konsepnya mirip seperti Template yang dijalankan sebelum masuk ke aplikasi (construktor)
+bisa berupa autentikasi
+
+        request -> middleware -> aplikasi -> respon
+
+Middleware = "perantara" yang bisa mengakses, mengubah, atau menghentikan request 
+sebelum sampai ke handler utama (atau sebelum respons dikirim balik).
+
+view engine memungkinkan kamu untuk menulis HTML dengan kode JavaScript di dalamnya, 
+lalu Express akan merendernya menjadi halaman HTML utuh untuk dikirim ke browser.
+view engine yg digunakan di sini adalah ejs
+
+
+kalau app.use itu sudah harus ada parameter "next setelah res" tapi kalau app.get itu sudah ada otomatis
+
+Middleware itu dijalankan secara synchronus tetapi proses didalamnya bisa dijalankan secara asynchronus
+
+Express melindungi beberapa file user seperti gambar,musik,video, css dll
+jadi kita harus menggunakan express static agar dapat mengaksesnya dengan cara masukan file-file tersebut ke dalam folder dengan nama 'public'

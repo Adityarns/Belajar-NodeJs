@@ -1,0 +1,2 @@
+NPM itu alat/tempat untuk menginstall package buat digunakan di js 
+kasarnya install methode/function dll biar codingan lebih mudah dan singkat 

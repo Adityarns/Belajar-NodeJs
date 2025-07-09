@@ -1,0 +1,7 @@
+Express adalah framework minimalis untuk Node.js yang membuat pembuatan aplikasi web dan API jadi:
+
+-lebih cepat
+
+-lebih rapi
+
+-lebih terstruktur
